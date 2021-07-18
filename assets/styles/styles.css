@@ -97,7 +97,7 @@ section{
 .first-section{
     width: 100%;
     height: 85vh;
-    /* background-image: url('../img/bg2.jpg'); */
+    background-image: url('../img/bg2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,6 +159,10 @@ section{
     box-shadow: 0px 0px 10px 3px white;
 }
 
+.first-section button:hover{
+    background-color: rgb(150, 83, 96);
+}
+
 .second-section{
     background-color: rgba(51,51,51,1);
 }
@@ -180,7 +184,7 @@ section{
     flex-wrap: wrap;
 }
 
-.profile-photo{
+/* .profile-photo{
     width: 80vw;
     height: 60vh;
     box-shadow: 0px 0px 50px 10px black;
@@ -189,6 +193,17 @@ section{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} */
+
+.profile-photo{
+    width: 80%;
+    box-shadow: 0px 0px 50px 10px black;
+    margin-top: 50px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -245,13 +260,18 @@ section{
     font-weight: 500;
     margin: 5px 10px 5px 10px;
     display: inline-block;
-    text-align: center;
+    text-align: left;
 }
 
 .profile-data-info tr td i{
     display: inline-block;
     color: white;
     font-size: 2rem;
+}
+
+.profile-data-info tr td a{
+    color: white;
+    font-size: 1.7rem;
 }
 
 @media screen and (min-width: 500px){
@@ -281,5 +301,48 @@ section{
 
     header ul{
         margin-left: 50px;
+    }
+
+    .profile-photo{
+        width: 25%;
+        margin-bottom: 50px;
+    }
+
+    .profile-data{
+        width: 70%;
+        padding: 30px 10px 0 40px;
+    }
+
+    .profile-data-info{
+        margin: 30px 0;
+    }
+    
+    .profile-data-name{
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    .profile-data-career{
+        font-size: 2.5rem;
+    }
+    
+    .profile-data-career{
+        text-align: left;
+    }
+
+    .profile-data-info tr .profile-data-info-title{
+        font-size: 2.7rem;
+    }
+
+    .profile-data-info tr td i{
+        font-size: 2.5rem;
+    }
+
+    .profile-data-info tr .profile-data-info-subtitle{
+        font-size: 2.5rem;
+    }
+
+    .profile-data-info tr td a{
+        font-size: 2rem;
     }
 }

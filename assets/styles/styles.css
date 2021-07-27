@@ -148,7 +148,6 @@ section{
     top: 82vh;
     left: calc(50vw/2);
     width: 50vw;
-    max-width: 250px;
     padding: 15px;
     background-color: crimson;
     border-radius: 5px;
@@ -448,6 +447,10 @@ figcaption{
 
     .max-width{
         width: 85%;
+    }
+
+    .section-title{
+        margin-left: 0vw;
     }
 
     .header-content-container{

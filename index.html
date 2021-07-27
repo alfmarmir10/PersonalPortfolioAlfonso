@@ -18,8 +18,8 @@
                 </div>
                 <ul>
                     <li><a href="#"><span><i class="fas fa-map-marker-alt"></i></span> Celaya, Gto. MX</a></li>
-                    <li><a href="#"><span><i class="fas fa-mobile-alt"></i></fa-mobile-alt></span> 442 586 2844</a></li>
-                    <li><a href="#"><span><i class="fas fa-at"></i> alfmar100391@icloud.com</a></li>
+                    <li><a href="#" onclick="call();"><span><i class="fas fa-mobile-alt"></i></fa-mobile-alt></span> 442 586 2844</a></li>
+                    <li><a href="#" onclick="sendEmail();"><span><i class="fas fa-at"></i> alfmar100391@icloud.com</a></li>
                 </ul>
             </div>
         </div>
@@ -32,7 +32,7 @@
                     <p class="first-section-text2">I´m Alfonso Martínez</p>
                     <p class="first-section-text3">and I´m a <span class="first-section-text4">Front Dev</span></p>
                 </div>
-                <button>See Portfolio</button>
+                <a href="#portfolio-section">See Portfolio</a>
             </div>
         </section>
         <section class="second-section">
@@ -117,6 +117,25 @@
                 </div>
             </div>
         </section>
+        <section class="fifth-section" id="portfolio-section">
+            <div class="max-width">
+                <p class="section-title">Portfolio</p>
+                <div class="portfolio-items-main-container">
+                    <div class="item-card">
+                        <div class="item-card-bezel">
+                            <div class="item-card-container">
+                                <div class="item-card-title-container flex-column-centrado">
+                                    <p class="item-card-title">Dewis Market</p>
+                                </div>
+                                <img src="./assets/img/DewisMarket.png" alt="">
+                                <p class="item-card-description">Dewis Market is a platform to boost local trade, in which you can register your business and begin to taking records of your sells and purchases, send digital tickets to your customers saving money in supplies like printers and paper, besides this, you can always know the lowest cost of your products and their provider, and if you prefer, you can open your online shop with the same products inventory and offer home delivery.</p>
+                                <a href="https://dewis-market.web.app/negocios/index.html" target="blank" class="see-more-button">See More <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
@@ -125,6 +144,18 @@
     <script type="text/javascript">
         window.onload = function(){
             scrollNavBar();
+
+        }
+        
+        function sendEmail(){
+            var link = "mailto:alfmar100391@icloud.com"
+             + "?subject=" + encodeURIComponent("Alfonso Martínez Insight");
+            
+            window.location.href = link;
+        }
+
+        function call(){
+            window.location.href='tel:+524425862844';
         }
     </script>
 </body>

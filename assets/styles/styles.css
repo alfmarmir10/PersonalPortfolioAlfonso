@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Yanone+Kaffeesatz:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
+:root{
+    --Montserrat: 'Montserrat', sans-serif;
+    --Yanone: 'Yanone Kaffeesatz', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.flex-column-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: aliceblue;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+header.sticky{
+    background-color: crimson;
+}
+
+.max-width{
+    width: 100%;
+}
+
+.nombrePersona{
+    font-family: var(--Montserrat);
+    font-size: 1.2rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.logo{
+    font-family: var(--Yanone);
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px auto 20px auto;
+    flex-wrap: wrap;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+}
+
+header ul.sticky{
+    display: none;
+}
+
+header li{
+    list-style: none;
+    margin: 5px 10px;
+}
+
+header li a{
+    font-family: var(--Montserrat);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.first-section{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/Bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-section-text-container{
+    padding-top: 200px;
+}
+
+.first-section-text1{
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+.first-section-text2{
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    font-size: 3.3rem;
+    text-align: center;
+    color: white;
+}
+
+.first-section-text3{
+    font-family: var(--Montserrat);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+.first-section-text4{
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    color: crimson;
+}
+
+.first-section a{
+    font-family: var(--Montserrat);
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: 82vh;
+    left: calc(50vw/2);
+    width: 50vw;
+    padding: 15px;
+    background-color: crimson;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px 3px white;
+    text-align: center;
+    text-underline-offset: 2px;
+}
+
+.first-section button:hover{
+    background-color: rgb(150, 83, 96);
+}
+
+.second-section{
+    background-color: rgba(51,51,51,1);
+    min-height: 100vh;
+}
+
+.section-title{
+    margin-left: 5vw;
+    margin-top: 10vh;
+    font-family: var(--Yanone);
+    font-weight: 700;
+    color: white;
+    font-size: 3.5rem;
+    border-bottom: 2px solid crimson;
+    max-width: calc(100vw - (5vw*2));
+}
+
+.section-title span{
+    display: inline-block;
+}
+
+.profile-main-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* .profile-photo{
+    width: 80vw;
+    height: 60vh;
+    box-shadow: 0px 0px 50px 10px black;
+    margin-top: 50px;
+    background: url('../img/personal_pic.jpeg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} */
+
+.profile-photo{
+    width: 80%;
+    box-shadow: 0px 0px 50px 10px black;
+    margin-top: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.profile-data{
+    width: 100%;
+}
+
+.profile-data-name{
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    max-width: 80vw;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.profile-data-career{
+    font-family: var(--Montserrat);
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: lightgray;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.profile-data-info{
+    list-style-type: none;
+    margin: 30px 10px;
+}
+
+.profile-data-info tr .profile-data-info-title{
+    font-family: var(--Montserrat);
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 500;
+    margin: 5px 10px 5px 0;
+    display: inline-block;
+}
+
+/* .profile-data-info li span{
+    display: inline-block;
+    margin: 0 5px;
+} */
+
+.profile-data-info tr .profile-data-info-subtitle{
+    font-family: var(--Montserrat);
+    font-size: 1.7rem;
+    color: lightgray;
+    font-weight: 500;
+    margin: 5px 10px 5px 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.profile-data-info tr td i{
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+}
+
+.profile-data-info tr td a{
+    color: white;
+    font-size: 1.7rem;
+}
+
+.profile-description{
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: var(--Montserrat);
+    margin: 20px 20px 30px 20px;
+    text-align: justify;
+}
+
+.third-section, .fourth-section{
+    background-color: rgba(255,255,255,0.85);
+    min-height: 50vh;
+}
+
+.color-crimson{
+    color: crimson;
+}
+
+.third-section .section-title, .fourth-section .section-title{
+    color: black;
+}
+
+.skills-main-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+figcaption{
+    font-family: var(--Montserrat);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.skills-main-container .skill-img{
+    width: 25vw;
+    margin: 20px 20px;
+}
+
+.skills-main-container .skill-img.node-img{
+    width: 60vw;
+}
+
+.skills-main-container .skill-img.vba-img{
+    width: 80vw;
+}
+
+.fifth-section{
+    background-color: rgba(0,0,0,0.85);
+    min-height: 100vh;
+}
+
+.portfolio-items-main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.item-card{
+    background-color: white;
+    width: 85vw;
+    /* height: 60vh; */
+    border: 0.5px solid white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px white;
+}
+
+.item-card-bezel{
+    background-color: transparent;
+    width: 96%;
+    height: 96%;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.97);
+    margin: 2.5% auto;
+}
+
+.item-card-container{
+    /* background-color: rgba(0,0,0,0.05); */
+    width: 96%;
+    height: 96%;
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-card-title-container{
+    width: 100%;
+    height: 12%;
+    margin: 4% auto;
+}
+
+.item-card-title{
+    font-family: var(--Montserrat);
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.project-img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.project-img.slim{
+    width: 80%;
+    margin: 1vh;
+}
+
+.card-img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.item-card-description{
+    margin: 5% 1%;
+    text-align: justify;
+    font-family: var(--Montserrat);
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.features-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-more-button{
+    width: 100%;
+    margin: 2% auto;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    font-family: var(--Montserrat);
+    font-size: 1.5rem;
+    font-weight: 700;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    text-underline-offset: 2px;
+    padding: 3vh 0;
+}
+
+@media screen and (min-width: 500px){
+    .first-section button{
+        left: calc((100vw - 250px)/2);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .max-width{
+        width: 85%;
+    }
+
+    .section-title{
+        margin-left: 0vw;
+    }
+
+    .header-content-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo-container{
+        margin-bottom: 5px;
+    }
+
+    header ul{
+        margin-left: 50px;
+        margin: unset;
+    }
+
+    .profile-photo{
+        width: 25%;
+        margin-bottom: 50px;
+    }
+
+    .profile-data{
+        width: 70%;
+        padding: 30px 10px 0 40px;
+    }
+
+    .profile-data-info{
+        margin: 30px 0;
+    }
+    
+    .profile-data-name{
+        text-align: left;
+        font-size: 3.5rem;
+    }
+
+    .profile-data-career{
+        font-size: 2.5rem;
+    }
+    
+    .profile-data-career{
+        text-align: left; 
+    }
+
+    .profile-data-info tr .profile-data-info-title{
+        font-size: 2.7rem;
+    }
+
+    .profile-data-info tr td i{
+        font-size: 2.5rem;
+    }
+
+    .profile-data-info tr .profile-data-info-subtitle{
+        font-size: 2.5rem;
+    }
+
+    .profile-data-info tr td a{
+        font-size: 2rem;
+    }
+
+    .project-img.slim{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .skills-main-container .skill-img{
+        width: 7vw;
+        margin: 20px 20px;
+    }
+    
+    .skills-main-container .skill-img.node-img{
+        width: 13vw;
+    }
+    
+    .skills-main-container .skill-img.vba-img{
+        width: 20vw;
+    }
+
+    .project-img.slim{
+        width: 15%;
+    }
+}

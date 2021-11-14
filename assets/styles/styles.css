@@ -355,6 +355,7 @@ figcaption{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     box-shadow: 0px 0px 15px 2px white;
+    margin-top: 5vh;
 }
 
 .item-card-bezel{
@@ -380,6 +381,7 @@ figcaption{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
 .item-card-title-container{
@@ -451,6 +453,22 @@ figcaption{
     text-align: center;
     text-underline-offset: 2px;
     padding: 3vh 0;
+}
+
+.mobile-only-container{
+    width: 10vw;
+    height: 5vh;
+    position:absolute;
+    top: 4vh;
+    right: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-design-icon{
+    width: 50%;
 }
 
 @media screen and (min-width: 500px){

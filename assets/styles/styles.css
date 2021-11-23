@@ -460,19 +460,18 @@ figcaption{
 }
 
 .mobile-only-container{
-    width: 7vw;
-    height: 4vh;
-    position:absolute;
-    top: 4vh;
-    right: 3vw;
+    width: 20vw;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 2.5vh auto;
 }
 
 .mobile-design-icon{
-    width: 30%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 footer{
@@ -595,6 +594,7 @@ footer li a{
     .item-card{
         width: 40vw;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -610,8 +610,20 @@ footer li a{
     .skills-main-container .skill-img.vba-img{
         width: 20vw;
     }
-
+    
     .project-img.slim{
         width: 15%;
+    }
+    
+    .mobile-only-container{
+        width: 7vw;
+        height: 4vh;
+        position:absolute;
+        top: 2vh;
+        right: 1vw;
+    }
+    
+    .mobile-design-icon{
+        width: 30%;
     }
 }

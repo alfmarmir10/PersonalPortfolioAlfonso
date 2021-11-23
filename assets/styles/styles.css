@@ -363,7 +363,7 @@ figcaption{
 .item-card-bezel{
     background-color: transparent;
     width: 96%;
-    height: 95%;
+    /* height: 95%; */
     border: 0.5px solid black;
     border-radius: 10px;
     -webkit-border-radius: 10px;
